@@ -3,7 +3,11 @@
 
 #Time from infection to incubation period is modeled
 # as log normal distribution
+#Lauer SA, Grantz KH, Bi Q, et al. The Incubation Period of Coronavirus Disease 2019 (COVID-19) From Publicly Reported Confirmed Cases: Estimation and Application. Ann Intern Med. 2020; [Epub ahead of print 10 March 2020]. doi: https://doi.org/10.7326/M20-0504
 #https://annals.org/aim/fullarticle/2762808/incubation-period-coronavirus-disease-2019-covid-19-from-publicly-reported
+
+library(ggplot2)
+library(dplyr)
 
 #work schedule
 day<-c(1,2,3,4,5,6,7)
@@ -99,6 +103,7 @@ summary((dat_s0011110))
 summary((dat_s0101110))
 summary((dat_s0110110))
 summary((dat_s0111010))
+summary((dat_s0111100))
 
 sd(dat_s0111110)
 sd(dat_s0011110)
@@ -124,15 +129,21 @@ simdat<-as.data.frame(
   cbind(6,dat_s0111100)))
 names(simdat)<-c("group","count")
 simdat$group<-as.factor(simdat$group)
+
+# 5 days vs 4 days in the office
+t.test(simdat[simdat$group!=1,2],simdat[simdat$group==1,2])
+
+#Mean time of of the office regardless of day
+summary(simdat[simdat$group!=1,2])
+
 #ANOVA Global
 summary(aov(count ~ group,simdat))
 
 #Pairwise Post-hocs
 pairwise.t.test(simdat$count, simdat$group, data=simdat, p.adj = "holm")
 
+#visualize the distrubtions
+p <- simdat %>%
+  ggplot(aes(x=count, fill=group)) +
+  geom_histogram(position = 'identity')+facet_wrap(~group)
 
-hist(trackdays)
-summary(trackdays)
-sd(trackdays)
-
-schedule
