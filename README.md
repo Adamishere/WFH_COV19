@@ -1,6 +1,6 @@
 # Effects of working from home >1 days a week on time a sick person is in the office
 ## Purpose:
-In 2020, the COVID-19 pandemic caused many companies to instruct employees to work from home to avoid spreading the disease. Some companies more restrictive work-from-home policies and still required some presense in a physical office throughout the week. However, COVID-19 infections can largely be asymptomatic for several days while still being contagious and as a result, while an employee may not appear to be sick, they can still infect others for several before they can self-quarantine.
+In 2020, the COVID-19 pandemic caused many companies to instruct employees to work from home to avoid spreading the disease. Some companies more restrictive work-from-home policies and still required some presense in a physical office throughout the week. However, COVID-19 infections can largely be asymptomatic for several days while still being contagious and as a result, while an employee may not appear to be sick, they can still infect others for several days before they can self-quarantine.
 
 ## Question:
 Under the assumption that you can only pick a few days out of the week to work from home: 
