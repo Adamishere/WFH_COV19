@@ -61,7 +61,7 @@ Additionally, when simulating additional days out of the office, mean time of an
 
 This question arises due to the idea that you potentially have a longer time out of the office if your WFH day is on a Friday or Monday, results in 3 full days out of the office. This longer period out of the office maybe give an employee more time to develop symptoms outside of work.
 
-The results of the simulation suggest that there is no significant difference in time in the office between days:
+In the analysis below, we perform pair-wise t-tests across mean time in the office while sick for each work from home day. The results of the simulation suggest that there is no significant difference in time in the office while sick between days:
 
     Pairwise comparisons using t tests with pooled SD 
        M    Tu    W    Th   F
