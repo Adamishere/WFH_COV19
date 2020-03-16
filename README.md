@@ -9,10 +9,10 @@ Under the assumption that you can only pick a few days out of the week to work f
 * What would be the best days to be out of the office to minimize the spread of the disease? 
 
 ## Description:
-This program simulates a 5 day work week, with Saturday and Sunday off. Using incubation period models from recent research which suggest a [log-normal incubation time](https://annals.org/aim/fullarticle/2762808/incubation-period-coronavirus-disease-2019-covid-19-from-publicly-reported) (approximately a mean of 5 days), this program simulates:
+This program simulates a 5 day work week, with Saturday and Sunday off. Using incubation period models from recent research which suggests a [log-normal incubation time](https://annals.org/aim/fullarticle/2762808/incubation-period-coronavirus-disease-2019-covid-19-from-publicly-reported) (approximately a mean of 5 days), this program simulates:
 
 * Random day of infection
-* Random incubation period from log-normal model
+* Random incubation period from a log-normal distribution
 * Length of time an employee would be in the office before symptoms appear
 
 In the simulation, I test several scenarios:
