@@ -39,7 +39,7 @@ For comparison, with working from home one day a week (any day), we see the mean
 
 This difference is signifcant at p<0.0001 level.
 
-Additionally, when simulating additional days out of the office, mean time of an employee being sick in the office is reduced linearly by 1 day, for each work from home day added.
+Additionally, when simulating additional days out of the office, mean time of an employee being sick in the office is reduced linearly by 0.8 days, for each work from home day added.
 
     #0 WFH days
     Min.    1st Qu.  Median    Mean    3rd Qu.    Max. 
@@ -78,6 +78,6 @@ The average time a sick person is in the office is effectively the same across a
 
 # Conclusions
 
-This simulation shows that for reducing the spread of the COVID-19 virus, working from home can reduce the changes an employee infects their coworkers before they are symptomatic. The more days working from home, the less time an infected employee spends in the office. It also doesn't matter what day you chose.
+This simulation shows that for reducing the spread of the COVID-19 virus, working from home can reduce the chances an employee infects their coworkers before they are symptomatic. The more days working from home, the less time an infected employee spends in the office. It also doesn't matter what day you chose.
 
 
